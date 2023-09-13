@@ -1,0 +1,82 @@
+:root {
+  --primary: #e99401;
+  --black: #262626;
+  --white: #fff;
+  --fuente-principal: "Outfit", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.915);
+}
+
+.orange {
+  background-color: rgb(255, 130, 67);
+}
+
+.pink {
+  background-color: rgb(255, 92, 124);
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+[class*="contenedor"],
+main {
+  width: min(95%, 120rem);
+  margin: 2rem auto;
+}
+[class*="heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 5rem 0;
+}
+.error,
+.error-enlace {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.error-enlace {
+  font-size: 1.8rem;
+  display: block;
+  text-decoration: none;
+  color: var(--primary);
+}
+.thumbCl {
+  display: block;
+}
+
+.form-control {
+  font-size: 2rem !important;
+}
+
+.btn {
+  font-size: 1.5rem !important;
+}
